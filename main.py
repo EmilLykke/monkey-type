@@ -48,7 +48,7 @@ while not stop_loop:
     print(text)
 
     # Write text
-    py.typewrite(text, interval=0.001)
+    py.typewrite(text)
 
     # Offset the image coordinates 
     if i == 0:
