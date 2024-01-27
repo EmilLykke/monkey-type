@@ -1,6 +1,7 @@
 import pytesseract as tesseract
 import pyautogui as py
 import time
+import keyboard
 from pynput.keyboard import Listener
 
 # Global variable to control the loop
@@ -48,7 +49,8 @@ while not stop_loop:
     print(text)
 
     # Write text
-    py.typewrite(text)
+    # py.typewrite(text)
+    keyboard.write(text)
 
     # Offset the image coordinates 
     if i == 0:
