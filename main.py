@@ -9,7 +9,7 @@ stop_loop = False
 
 # Coordinates for screenshot
 # Change to fit your screen
-x1, y1, x2, y2 = 153, 450, 1366, 590
+x1, y1, x2, y2 = 153, 440, 1366, 590
 
 def on_press(key):
     global stop_loop
@@ -54,7 +54,7 @@ while not stop_loop:
 
     # Offset the image coordinates 
     if i == 0:
-        y1+=50
+        y1+=45
     i+=1
 
 listener.stop()  # Stop the listener once the loop is exited
